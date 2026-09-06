@@ -35,7 +35,7 @@ app.get("/test", async (req, res) => {
     }
 });
 
-// Show all listings
+//  listings
 app.get("/listing", async (req, res) => {
     try {
         const listings = await Listing.find({});
@@ -48,6 +48,15 @@ app.get("/listing", async (req, res) => {
         console.log(err);
         res.status(500).send("Error fetching listings");
     }
+});
+
+// show
+
+app.get("/listing/:id", async(req, res)=>{
+    let {id} = req.params;
+    const listing = await Listing.findById(id);
+    res.render("listing/show.ejs", {listing})
+
 });
 
 // Start app
