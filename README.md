@@ -1,5 +1,4 @@
-# wanderlust-travel-app
-A full-stack Airbnb-inspired travel accommodation platform for discovering, listing, and reviewing stays.
+
 # 🌍 WanderLust
 
 > A full-stack travel accommodation platform for discovering, listing, and reviewing stays.
